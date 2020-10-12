@@ -57,18 +57,15 @@ Before calculating the triplet loss, I need to obtain three embeddings for Ancho
 
 The difference between Anchor and Positive is:
 
-<img src="https://latex.codecogs.com/svg.latex?&space;d_p = \lVert f(x_i^a) - f(x_i^p) \rVert_2^2
-" />
+<img src="https://latex.codecogs.com/svg.latex?&space;d_p=\lVert&space;f(x_i^a)&space;-&space;f(x_i^p)\rVert_2^2" />
 
 The difference between Anchor and Negative is:
 
-<img src="https://latex.codecogs.com/svg.latex?&space;d_n = \lVert f(x_i^a) - f(x_i^n) \rVert_2^2
-" />
+<img src="https://latex.codecogs.com/svg.latex?&space;d_n=\lVert&space;f(x_i^a)&space;-&space;f(x_i^n)&space;\rVert_2^2" />
 
 And the Triplet Loss is defined as:
 
-<img src="https://latex.codecogs.com/svg.latex?&space;L = max(d_p - d_n + \alpha, 0)
-" />
+<img src="https://latex.codecogs.com/svg.latex?&space;L=max(d_p&space;-&space;d_n&space;+&space;\alpha,&space;0)" />
 
 *( <img src="https://latex.codecogs.com/svg.latex?&space;\alpha" />: margin )*
 
